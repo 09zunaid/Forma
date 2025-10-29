@@ -1,4 +1,4 @@
-import { Mail, Phone, Calendar } from 'lucide-react';
+import { Mail, Phone, Calendar, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import LeadForm from './LeadForm';
@@ -6,7 +6,7 @@ import LeadForm from './LeadForm';
 const contactDetails = {
   email: 'mohammadzunaid83@gmail.com',
   phone: '7569370322',
-  calendly: 'https://calendly.com/d/cn3g-h6d-ccm/forma-free-consultation',
+  whatsapp: 'https://wa.me/7569370322',
 };
 
 export default function Contact() {
@@ -45,9 +45,9 @@ export default function Contact() {
                 <h3 className="font-headline text-2xl font-bold text-primary mb-4">Ready to Start?</h3>
                 <p className="text-muted-foreground mb-6">Schedule a free, no-obligation 30-minute consultation call with us to discuss your project in detail.</p>
                 <Button asChild size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground">
-                    <Link href={contactDetails.calendly} target="_blank" rel="noopener noreferrer">
-                        <Calendar className="mr-2 h-5 w-5" />
-                        Book a Free Consultation
+                    <Link href={contactDetails.whatsapp} target="_blank" rel="noopener noreferrer">
+                        <MessageCircle className="mr-2 h-5 w-5" />
+                        Chat on WhatsApp
                     </Link>
                 </Button>
             </div>
