@@ -53,7 +53,7 @@ export default function Header() {
           {renderNavLinks()}
         </nav>
         <div className="flex items-center gap-4">
-          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary/10 text-primary dark:bg-background/10 dark:text-background text-sm font-bold hover:bg-primary/20 dark:hover:bg-background/20 transition-all duration-300">
+          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-accent text-accent-foreground text-sm font-bold hover:bg-accent/90 transition-all duration-300 shadow-md hover:shadow-lg">
             <Link href="/contact">Get a Quote</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
