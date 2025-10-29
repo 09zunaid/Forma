@@ -6,36 +6,41 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/Logo';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/process', label: 'About' },
   { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/process', label: 'About' }, // Changed from /process to match new UI
   { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const pathname = usePathname();
 
   const handleLinkClick = () => {
     setIsMobileMenuOpen(false);
   };
 
   const renderNavLinks = (isMobile = false) =>
-    navLinks.map((link) => (
-      <Link
-        key={link.href}
-        href={link.href}
-        onClick={handleLinkClick}
-        className={`transition-colors hover:text-accent dark:hover:text-accent ${
-          isMobile
-            ? 'block py-2 text-lg'
-            : 'text-sm font-medium text-primary dark:text-background'
-        }`}
-      >
-        {link.label}
-      </Link>
-    ));
+    navLinks.map((link) => {
+      const isActive = pathname === link.href;
+      return (
+        <Link
+          key={link.href}
+          href={link.href}
+          onClick={handleLinkClick}
+          className={`transition-colors hover:text-accent dark:hover:text-accent ${
+            isMobile
+              ? 'block py-2 text-lg'
+              : `text-sm font-medium ${isActive ? 'text-accent font-bold' : 'text-primary dark:text-background'}`
+          }`}
+        >
+          {link.label}
+        </Link>
+      );
+    });
 
   return (
     <header className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5">
@@ -47,7 +52,7 @@ export default function Header() {
           {renderNavLinks()}
         </nav>
         <div className="flex items-center gap-4">
-          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary/10 text-primary dark:bg-background/10 dark:text-background text-sm font-bold hover:bg-primary/20 dark:hover:bg-background/20 transition-all duration-300">
+          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-accent text-white text-sm font-bold hover:bg-accent/90 transition-all duration-300">
             <Link href="/contact">Get a Quote</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -57,7 +62,7 @@ export default function Header() {
                 <span className="sr-only">Open navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full bg-background dark:bg-background-dark">
+            <SheetContent side="right" className="w-full bg-secondary dark:bg-primary">
               <div className="flex h-full flex-col p-6">
                 <div className="mb-8 flex items-center justify-between">
                   <Link href="/" onClick={handleLinkClick}>
@@ -69,7 +74,7 @@ export default function Header() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-6">{renderNavLinks(true)}</nav>
-                 <Button asChild size="lg" className="mt-auto">
+                 <Button asChild size="lg" className="mt-auto bg-accent text-white hover:bg-accent/90">
                     <Link href="/contact" onClick={handleLinkClick}>Get a Quote</Link>
                 </Button>
               </div>

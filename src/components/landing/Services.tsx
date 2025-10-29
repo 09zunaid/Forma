@@ -1,63 +1,81 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, ShoppingCart, PenTool, TrendingUp, Wrench, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
+import { PenTool, ShoppingCart, TrendingUp, Wrench } from 'lucide-react';
+import { Button } from '../ui/button';
+
 
 const services = [
   {
-    icon: <Code className="h-8 w-8 text-accent" />,
+    icon: <PenTool className="h-8 w-8 text-accent" />,
     title: 'Website Design & Development',
-    description: 'Crafting beautiful, responsive, and high-performing websites that align with your brand and business goals.',
+    description: 'Creating beautiful, custom websites that convert visitors into customers and build brand credibility.',
+    link: '#',
   },
   {
     icon: <ShoppingCart className="h-8 w-8 text-accent" />,
     title: 'E-commerce Solutions',
-    description: 'Building robust online stores that provide seamless shopping experiences and drive sales.',
-  },
-  {
-    icon: <PenTool className="h-8 w-8 text-accent" />,
-    title: 'UI/UX Design',
-    description: 'Designing intuitive and engaging user interfaces that enhance user satisfaction and conversion rates.',
+    description: 'Building powerful online stores to sell your products effectively with secure transactions and easy management.',
+    link: '#',
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-accent" />,
     title: 'SEO Setup',
-    description: 'Implementing foundational search engine optimization to improve your visibility on Google and attract organic traffic.',
+    description: 'Helping your business get found on Google by ideal customers, driving more traffic and quality leads.',
+    link: '#',
   },
   {
     icon: <Wrench className="h-8 w-8 text-accent" />,
-    title: 'Maintenance & Support',
-    description: 'Providing ongoing support and maintenance to ensure your website remains secure, updated, and efficient.',
-  },
-  {
-    icon: <ShieldCheck className="h-8 w-8 text-accent" />,
-    title: 'Brand Identity',
-    description: 'Developing a strong brand identity with a memorable logo, color palette, and style guide to set you apart.',
+    title: 'Ongoing Maintenance & Support',
+    description: 'Providing peace of mind with reliable website support, security, and updates, acting as your partner for growth.',
+    link: '#',
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-secondary/50">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Services</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            From concept to launch, we provide the digital services your business needs to succeed.
-          </p>
+    <main className="flex flex-col gap-16 md:gap-24 py-16 md:py-24 px-4 sm:px-10">
+        <div className="container mx-auto">
+            <div className="flex flex-col gap-6 text-center items-center">
+                <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-primary dark:text-secondary sm:text-5xl md:text-6xl max-w-3xl">
+                    What We Offer
+                </h1>
+                <p className="text-base font-normal leading-relaxed text-muted-foreground dark:text-secondary/70 sm:text-lg max-w-2xl">
+                    We transform your vision into a digital reality, creating beautiful, functional websites that drive results for your business.
+                </p>
+            </div>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Card key={index} className="flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <CardHeader className="flex flex-row items-center gap-4 pb-4">
-                {service.icon}
-                <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+
+        <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+            {services.map((service, index) => (
+                <div key={index} className="flex flex-1 flex-col gap-4 rounded-xl border border-accent-2/80 bg-accent-2 dark:bg-primary/50 dark:border-white/10 p-6 transition-all hover:shadow-lg hover:-translate-y-1">
+                    <div className="text-accent">
+                        {service.icon}
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <h2 className="text-primary dark:text-secondary text-xl font-display font-bold leading-tight">{service.title}</h2>
+                        <p className="text-muted-foreground dark:text-secondary/70 text-sm font-normal leading-normal">{service.description}</p>
+                        <Link href={service.link} className="text-accent text-sm font-bold mt-2 hover:underline">Learn More →</Link>
+                    </div>
+                </div>
+            ))}
         </div>
-      </div>
-    </section>
+
+        <div className="container mx-auto bg-primary dark:bg-secondary/80 rounded-xl">
+            <div className="flex flex-col items-center justify-center gap-6 px-4 py-16 text-center sm:gap-8 sm:px-10 sm:py-20">
+                <div className="flex flex-col gap-4">
+                    <h1 className="text-secondary dark:text-primary font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl max-w-2xl">
+                        Ready to Shape Your Vision?
+                    </h1>
+                    <p className="text-secondary/80 dark:text-primary/80 text-base font-normal leading-normal max-w-2xl">
+                        Let's build something amazing together. Get in touch with us to start your project.
+                    </p>
+                </div>
+                <div className="flex flex-1 justify-center">
+                    <Button asChild className="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-accent text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-accent/90 transition-opacity">
+                        <Link href="/contact">Start Your Project</Link>
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </main>
   );
 }
