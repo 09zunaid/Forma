@@ -113,12 +113,12 @@
   ],
   "about": {
     "founder": {
-      "imageUrl": "https://picsum.photos/seed/founder-new-5/400/400",
-      "imageHint": "founder portrait"
+      "imageUrl": "https://picsum.photos/seed/new-founder-img/400/400",
+      "imageHint": "professional founder portrait"
     },
     "team": {
-      "imageUrl": "https://picsum.photos/seed/team-new-5/600/400",
-      "imageHint": "office meeting"
+      "imageUrl": "https://picsum.photos/seed/new-team-img/600/400",
+      "imageHint": "development team working"
     }
   }
 }
