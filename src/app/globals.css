@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 210 25% 98%;
+    --background: 210 25% 97%;
     --foreground: 212 45% 12%;
     --card: 0 0% 100%;
     --card-foreground: 212 45% 12%;
@@ -15,12 +15,12 @@
     --secondary: 210 15% 95%;
     --secondary-foreground: 212 45% 12%;
     --muted: 210 15% 95%;
-    --muted-foreground: 212 20% 40%;
+    --muted-foreground: 213 30% 45%;
     --accent: 8 100% 70%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 10% 90%;
+    --border: 212 45% 12% / 0.1;
     --input: 210 10% 90%;
     --ring: 8 100% 70%;
     --chart-1: 12 76% 61%;
@@ -32,8 +32,8 @@
   }
  
   .dark {
-    --background: 212 45% 12%;
-    --foreground: 210 25% 90%;
+    --background: 213 50% 8%;
+    --foreground: 210 25% 98%;
     --card: 212 40% 18%;
     --card-foreground: 210 25% 90%;
     --popover: 212 45% 12%;
@@ -43,12 +43,12 @@
     --secondary: 212 40% 20%;
     --secondary-foreground: 210 25% 98%;
     --muted: 212 40% 20%;
-    --muted-foreground: 210 20% 60%;
+    --muted-foreground: 213 30% 45% / 0.8;
     --accent: 8 100% 70%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 212 40% 25%;
+    --border: 210 25% 98% / 0.1;
     --input: 212 40% 25%;
     --ring: 8 100% 70%;
     --chart-1: 220 70% 50%;
@@ -69,6 +69,9 @@
   }
   section {
     @apply py-16 sm:py-20 lg:py-24;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
   }
 }
 

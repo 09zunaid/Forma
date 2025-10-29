@@ -2,6 +2,7 @@ import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Footer from '@/components/landing/Footer';
 import Chatbot from '@/components/landing/Chatbot';
+import SocialProof from '@/components/landing/SocialProof';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <SocialProof />
       </main>
       <Footer />
       <Chatbot />

@@ -84,6 +84,11 @@ export default {
             height: '0',
           },
         },
+        'float': {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+          '100%': { transform: 'translateY(0px)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',

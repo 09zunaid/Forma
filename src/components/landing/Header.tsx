@@ -9,23 +9,13 @@ import Logo from '@/components/Logo';
 
 const navLinks = [
   { href: '/services', label: 'Services' },
-  { href: '/process', label: 'Process' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/process', label: 'About' }, // Changed from /process to match new UI
   { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleLinkClick = () => {
     setIsMobileMenuOpen(false);
@@ -37,8 +27,10 @@ export default function Header() {
         key={link.href}
         href={link.href}
         onClick={handleLinkClick}
-        className={`transition-colors hover:text-accent ${
-          isMobile ? 'block py-2 text-lg' : 'text-sm font-medium'
+        className={`transition-colors hover:text-accent dark:hover:text-accent ${
+          isMobile
+            ? 'block py-2 text-lg'
+            : 'text-sm font-medium text-primary dark:text-background'
         }`}
       >
         {link.label}
@@ -46,30 +38,26 @@ export default function Header() {
     ));
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
-      }`}
-    >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
+    <header className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5">
+      <div className="mx-auto flex max-w-7xl items-center justify-between border-b border-primary/10 dark:border-background/10 pb-4">
+        <Link href="/" onClick={handleLinkClick}>
           <Logo />
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {renderNavLinks()}
         </nav>
         <div className="flex items-center gap-4">
-          <Button asChild size="sm" className="hidden sm:flex bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href="/contact">Schedule a Consultation</Link>
+          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary/10 text-primary dark:bg-background/10 dark:text-background text-sm font-bold hover:bg-primary/20 dark:hover:bg-background/20 transition-all duration-300">
+            <Link href="/contact">Get a Quote</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="lg:hidden text-primary dark:text-background">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full bg-background">
+            <SheetContent side="right" className="w-full bg-background dark:bg-background-dark">
               <div className="flex h-full flex-col p-6">
                 <div className="mb-8 flex items-center justify-between">
                   <Link href="/" onClick={handleLinkClick}>
@@ -81,8 +69,8 @@ export default function Header() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-6">{renderNavLinks(true)}</nav>
-                <Button asChild size="lg" className="mt-auto bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <Link href="/contact" onClick={handleLinkClick}>Schedule a Consultation</Link>
+                 <Button asChild size="lg" className="mt-auto">
+                    <Link href="/contact" onClick={handleLinkClick}>Get a Quote</Link>
                 </Button>
               </div>
             </SheetContent>

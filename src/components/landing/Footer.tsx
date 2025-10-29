@@ -4,9 +4,8 @@ import Logo from '@/components/Logo';
 
 const navLinks = [
   { href: '/services', label: 'Services' },
-  { href: '/process', label: 'Process' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/process', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -23,7 +22,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-4">
-            <Logo isFooter={true} />
+            <Logo className="text-primary-foreground dark:text-primary-foreground" />
             <p className="text-sm text-primary-foreground/70">
               Crafting digital experiences that drive results. We bring your vision to life with creativity and code.
             </p>
