@@ -3,9 +3,9 @@ import Logo from '@/components/Logo';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/process', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/process', label: 'About' },
   { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/terms', label: 'Terms & Conditions' },
