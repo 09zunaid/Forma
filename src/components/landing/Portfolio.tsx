@@ -59,8 +59,11 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => (
-            <div
+            <Link
               key={project.id}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 'group relative col-span-1 overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl',
                 project.span
@@ -78,19 +81,11 @@ export default function Portfolio() {
               <div className="absolute bottom-0 left-0 w-full p-6 text-white">
                 <h3 className="font-display text-xl font-bold">{project.title}</h3>
                 <p className="mt-1 text-accent">{project.result}</p>
-                <div className="group-hover-card absolute bottom-0 left-0 right-0 translate-y-full transform rounded-t-lg bg-white p-6 opacity-0 transition-all duration-500 ease-in-out dark:bg-primary">
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between font-bold text-primary dark:text-white"
-                  >
-                    <span>View Case Study</span>
+                <div className="absolute bottom-6 right-6 flex items-center justify-center h-10 w-10 rounded-full bg-white/20 text-white opacity-0 transform-gpu scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
                     <ArrowUpRight className="h-5 w-5" />
-                  </Link>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
