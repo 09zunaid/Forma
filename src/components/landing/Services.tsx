@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PenTool, ShoppingCart, TrendingUp, Wrench } from 'lucide-react';
+import { PenTool, ShoppingCart, TrendingUp, Wrench, Palette } from 'lucide-react';
 import { Button } from '../ui/button';
 
 
@@ -14,6 +14,12 @@ const services = [
     icon: <ShoppingCart className="h-8 w-8 text-accent" />,
     title: 'E-commerce Solutions',
     description: 'Building powerful online stores to sell your products effectively with secure transactions and easy management.',
+    link: '#',
+  },
+  {
+    icon: <Palette className="h-8 w-8 text-accent" />,
+    title: 'UI/UX Design',
+    description: 'Crafting intuitive and visually appealing user interfaces that enhance user experience and engagement.',
     link: '#',
   },
   {
@@ -44,7 +50,7 @@ export default function Services() {
             </div>
         </div>
 
-        <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
                 <div key={index} className="flex flex-1 flex-col gap-4 rounded-xl border border-accent-2/80 bg-accent-2 dark:bg-primary/50 dark:border-white/10 p-6 transition-all hover:shadow-lg hover:-translate-y-1">
                     <div className="text-accent">
