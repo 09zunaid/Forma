@@ -8,6 +8,7 @@ const navLinks = [
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/terms', label: 'Terms & Conditions' },
 ];
 
 const socialLinks = [
