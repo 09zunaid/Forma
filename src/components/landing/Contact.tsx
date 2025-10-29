@@ -16,9 +16,9 @@ export default function Contact() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-8">
             <div>
-              <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Let's Build Together</h2>
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Let's Build Your Vision</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Have a project in mind or just want to say hello? We'd love to hear from you. Fill out the form or use one of the methods below to get in touch.
+                Tell us your goals, and we'll provide a clear, no-obligation plan to bring your project to life. Let's build something great together.
               </p>
             </div>
             <div className="space-y-4">
