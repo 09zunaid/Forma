@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight } from 'lucide-react';
 import portfolioData from '@/lib/placeholder-images.json';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 type Project = {
   id: string;
@@ -19,14 +20,13 @@ type Project = {
 };
 
 const projects: Project[] = portfolioData.portfolio;
-const categories = ['All', 'Web App', 'E-commerce', 'Portfolio'];
+const categories = ['All', 'Web App', 'E-commerce', 'Portfolio', 'UI/UX Design'];
 
 export default function Portfolio() {
   const [filter, setFilter] = React.useState('All');
 
   const filteredProjects = React.useMemo(() => {
     if (filter === 'All') return projects;
-    if (filter === 'Portfolio') return projects.filter(p => p.category === 'Portfolio');
     return projects.filter(p => p.category === filter);
   }, [filter]);
 
@@ -40,18 +40,15 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="mb-8 flex flex-wrap justify-center gap-2">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={filter === category ? 'default' : 'outline'}
-              onClick={() => setFilter(category)}
-              className={filter === category ? 'bg-primary text-primary-foreground' : 'text-primary'}
-            >
-              {category}
-            </Button>
-          ))}
-        </div>
+        <Tabs defaultValue="All" onValueChange={(value) => setFilter(value)} className="mb-8 flex justify-center">
+          <TabsList>
+            {categories.map((category) => (
+              <TabsTrigger key={category} value={category}>
+                {category}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </Tabs>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => (
