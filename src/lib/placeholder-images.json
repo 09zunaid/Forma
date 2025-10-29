@@ -85,5 +85,15 @@
       "avatarUrl": "https://picsum.photos/seed/emily/100/100",
       "avatarHint": "smiling woman"
     }
-  ]
+  ],
+  "about": {
+    "founder": {
+      "imageUrl": "https://picsum.photos/seed/zunaid/400/400",
+      "imageHint": "professional man"
+    },
+    "team": {
+      "imageUrl": "https://picsum.photos/seed/team-photo/600/400",
+      "imageHint": "team collaborating"
+    }
+  }
 }
