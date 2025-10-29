@@ -7,6 +7,8 @@ const navLinks = [
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/process', label: 'Process' },
   { href: '/about', label: 'About' },
+  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/terms', label: 'Terms & Conditions' },
