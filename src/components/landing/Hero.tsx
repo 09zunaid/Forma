@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-            <div className="relative aspect-square">
+            <div className="relative aspect-square animate-float">
               <div className="absolute inset-0 bg-primary/5 dark:bg-background/5 rounded-full blur-3xl"></div>
               <div className="absolute inset-8 bg-accent/10 dark:bg-accent/10 rounded-full blur-3xl animate-[spin_20s_linear_infinite] [animation-direction:reverse]"></div>
               <div className="absolute inset-16 bg-primary/10 dark:bg-background/10 rounded-full blur-3xl animate-[spin_15s_linear_infinite]"></div>
