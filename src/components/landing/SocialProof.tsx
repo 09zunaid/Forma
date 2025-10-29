@@ -20,9 +20,8 @@ const SocialProof = () => {
             <Image 
                 key={index}
                 className="h-8 w-auto object-contain text-primary dark:text-background" 
-                data-alt={logo.alt} 
                 src={logo.src}
-                width={logo.alt === 'GitHub Logo' ? 42 : 32}
+                width={120}
                 height={32}
                 data-ai-hint={logo.hint}
                 alt={logo.alt}
