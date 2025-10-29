@@ -32,10 +32,10 @@ const Hero = () => {
               <Image 
                 className="relative w-full h-full object-cover rounded-xl shadow-2xl shadow-primary/10 dark:shadow-black/20" 
                 alt="Abstract representation of vision and form with geometric shapes and fluid lines." 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8NCnpE90PkEc9RV75rPpJ3mdCakhNjQu-yrpNtWE-fix4ob6B2yMJWsqhfPvrrnZwtwIR6Rcz0Sa97lqxnjQku8ahxKsUKhFJ2fntHqJ-_VnwJxA2oFawv1BBHcbUq7_GZ2oG4awjQyOnuVOlw5h6XNutAccaEtfHOPmUe7NBv7gry15avnZKWLsBBgptdfWHKFByZQk0dsSrCJwSFFvegXf2iXd2U5vyPx9mO2AAS6OypYEQ8o1NcE_3xBpQaPSavP4leGcmeI"
+                src="https://images.unsplash.com/photo-1570717173024-ec8081c8f8e9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=fran-innocenti-HRfvMO9I69U-unsplash.jpg"
                 width={600}
                 height={600}
-                data-ai-hint="geometric shapes fluid lines"
+                data-ai-hint="desk setup"
               />
             </div>
           </div>
