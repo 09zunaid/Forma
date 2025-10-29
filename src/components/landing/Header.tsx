@@ -4,7 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import Logo from '@/components/Logo';
 import { usePathname } from 'next/navigation';
 
@@ -65,14 +65,18 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full bg-secondary dark:bg-primary">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex h-full flex-col p-6">
                 <div className="mb-8 flex items-center justify-between">
                   <Link href="/" onClick={handleLinkClick}>
                     <Logo />
                   </Link>
-                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                    <span className="sr-only">Close navigation menu</span>
-                  </Button>
+                  <SheetClose asChild>
+                    <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                       <X className="h-6 w-6" />
+                      <span className="sr-only">Close navigation menu</span>
+                    </Button>
+                  </SheetClose>
                 </div>
                 <nav className="flex flex-col gap-6">
                     {renderNavLinks(true)}
