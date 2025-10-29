@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import placeholderImages from '@/lib/placeholder-images.json';
 
 const Hero = () => {
     return (
