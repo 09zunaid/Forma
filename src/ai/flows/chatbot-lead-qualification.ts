@@ -12,6 +12,10 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const ChatbotLeadQualificationInputSchema = z.object({
+  history: z.array(z.object({
+    role: z.string(),
+    content: z.string(),
+  })).describe('The conversation history.'),
   prompt: z.string().describe('The user prompt for the chatbot.'),
 });
 export type ChatbotLeadQualificationInput = z.infer<
@@ -35,9 +39,16 @@ const prompt = ai.definePrompt({
   name: 'chatbotLeadQualificationPrompt',
   input: {schema: ChatbotLeadQualificationInputSchema},
   output: {schema: ChatbotLeadQualificationOutputSchema},
-  prompt: `You are a chatbot for a website design and development agency. Your primary goals are to answer user questions, provide contact information (phone number: 7569370322, email: mohammadzunaid83@gmail.com), and schedule a free consultation via Calendly.
+  prompt: `You are a friendly and helpful chatbot for a website design and development agency called Forma. Your primary goals are to answer user questions, provide contact information (phone number: 7569370322, email: mohammadzunaid83@gmail.com), and offer to schedule a free consultation via Calendly.
 
-  Here is the user\'s prompt:
+  Keep your responses concise and to the point.
+
+  Here is the conversation history:
+  {{#each history}}
+  {{role}}: {{content}}
+  {{/each}}
+
+  Here is the user's latest prompt:
   {{prompt}}`,
 });
 
