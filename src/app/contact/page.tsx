@@ -1,14 +1,14 @@
 import Header from '@/components/landing/Header';
-import Hero from '@/components/landing/Hero';
+import Contact from '@/components/landing/Contact';
 import Footer from '@/components/landing/Footer';
 import Chatbot from '@/components/landing/Chatbot';
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <Hero />
+        <Contact />
       </main>
       <Footer />
       <Chatbot />

@@ -21,10 +21,10 @@ const AnimatedShape = ({ className, animation }: { className: string; animation:
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="#contact">Schedule a Free Consultation</Link>
+                <Link href="/contact">Schedule a Free Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
-                <Link href="#portfolio">View Our Work</Link>
+                <Link href="/portfolio">View Our Work</Link>
               </Button>
             </div>
           </div>

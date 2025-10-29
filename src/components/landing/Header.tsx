@@ -8,11 +8,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/Logo';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#process', label: 'Process' },
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/services', label: 'Services' },
+  { href: '/process', label: 'Process' },
+  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -60,7 +60,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button asChild size="sm" className="hidden sm:flex bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href="#contact">Schedule a Consultation</Link>
+            <Link href="/contact">Schedule a Consultation</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -82,7 +82,7 @@ export default function Header() {
                 </div>
                 <nav className="flex flex-col gap-6">{renderNavLinks(true)}</nav>
                 <Button asChild size="lg" className="mt-auto bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <Link href="#contact" onClick={handleLinkClick}>Schedule a Consultation</Link>
+                  <Link href="/contact" onClick={handleLinkClick}>Schedule a Consultation</Link>
                 </Button>
               </div>
             </SheetContent>

@@ -3,11 +3,11 @@ import { Mail, Phone } from 'lucide-react';
 import Logo from '@/components/Logo';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#process', label: 'Process' },
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/services', label: 'Services' },
+  { href: '/process', label: 'Process' },
+  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const contactDetails = {

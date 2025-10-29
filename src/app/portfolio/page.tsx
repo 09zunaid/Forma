@@ -1,15 +1,15 @@
 import Header from '@/components/landing/Header';
-import Hero from '@/components/landing/Hero';
+import Portfolio from '@/components/landing/Portfolio';
 import Footer from '@/components/landing/Footer';
 import Chatbot from '@/components/landing/Chatbot';
 
-export default function Home() {
+export default function PortfolioPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <Hero />
-      </main>
+        <Portfolio />
+      </main>      
       <Footer />
       <Chatbot />
     </div>
