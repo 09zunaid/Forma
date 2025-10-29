@@ -4,56 +4,56 @@
       "id": "lumino-portfolio",
       "title": "Lumino Portfolio",
       "category": "Portfolio",
-      "imageUrl": "https://picsum.photos/seed/design/600/400",
-      "imageHint": "modern portfolio",
+      "imageUrl": "https://picsum.photos/seed/portfolio-homepage/600/400",
+      "imageHint": "portfolio website",
       "link": "https://lumino-portfolio.vercel.app/"
     },
     {
       "id": "apple-dental",
       "title": "Apple Dental Care",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/medical/600/400",
-      "imageHint": "dental clinic",
+      "imageUrl": "https://picsum.photos/seed/dental-website/600/400",
+      "imageHint": "dental website",
       "link": "https://apple-dental-care-three.vercel.app/"
     },
     {
       "id": "cafe-encanto",
       "title": "Cafe Encanto",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/coffee/600/400",
-      "imageHint": "cozy cafe",
+      "imageUrl": "https://picsum.photos/seed/cafe-website/600/400",
+      "imageHint": "cafe website",
       "link": "https://cafe-encanto-delta.vercel.app/"
     },
     {
       "id": "starlight-bakery",
       "title": "StarLight Bakery",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/bread/600/400",
-      "imageHint": "artisan bakery",
+      "imageUrl": "https://picsum.photos/seed/bakery-ecommerce/600/400",
+      "imageHint": "bakery ecommerce",
       "link": "https://star-light-bakery.vercel.app/"
     },
     {
       "id": "evergreen-grocer",
       "title": "EverGreen Grocer",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/vegetables/600/400",
-      "imageHint": "fresh groceries",
+      "imageUrl": "https://picsum.photos/seed/grocery-ecommerce/600/400",
+      "imageHint": "grocery store",
       "link": "https://ever-green-grocer.vercel.app/"
     },
     {
       "id": "urban-step",
       "title": "Urban Step",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/fashion/600/400",
-      "imageHint": "stylish sneakers",
+      "imageUrl": "https://picsum.photos/seed/shoe-store/600/400",
+      "imageHint": "shoe ecommerce",
       "link": "https://urban-step.vercel.app/"
     },
     {
       "id": "enigmatic-elixirs",
       "title": "Enigmatic Elixirs",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/magic/600/400",
-      "imageHint": "fantasy potions",
+      "imageUrl": "https://picsum.photos/seed/fantasy-website/600/400",
+      "imageHint": "fantasy website",
       "link": "https://enigmatic-elixirs.vercel.app/"
     }
   ],
