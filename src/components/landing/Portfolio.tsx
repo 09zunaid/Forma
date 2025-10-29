@@ -19,7 +19,7 @@ type Project = {
 };
 
 const projects: Project[] = portfolioData.portfolio;
-const categories = ['All', 'Web App', 'E-commerce', 'UI/UX', 'Portfolio'];
+const categories = ['All', 'Web App', 'E-commerce', 'Portfolio'];
 
 export default function Portfolio() {
   const [filter, setFilter] = React.useState('All');

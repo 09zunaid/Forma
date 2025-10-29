@@ -55,30 +55,6 @@
       "imageUrl": "https://picsum.photos/seed/elixirs/600/400",
       "imageHint": "fantasy potions",
       "link": "https://enigmatic-elixirs.vercel.app/"
-    },
-    {
-      "id": "fintech-dashboard",
-      "title": "Fintech UI/UX",
-      "category": "UI/UX",
-      "imageUrl": "https://picsum.photos/seed/fintech/600/400",
-      "imageHint": "financial dashboard",
-      "link": "#"
-    },
-    {
-      "id": "saas-interface",
-      "title": "SaaS Platform Design",
-      "category": "UI/UX",
-      "imageUrl": "https://picsum.photos/seed/saas/600/400",
-      "imageHint": "saas interface",
-      "link": "#"
-    },
-    {
-      "id": "mobile-app-ux",
-      "title": "Travel App UX",
-      "category": "UI/UX",
-      "imageUrl": "https://picsum.photos/seed/travelapp/600/400",
-      "imageHint": "mobile travel",
-      "link": "#"
     }
   ],
   "testimonials": [
