@@ -49,11 +49,10 @@ export default function Header() {
           <Logo />
         </Link>
         <nav className="hidden items-center gap-8 lg:flex">
-           <Link href="/" className={`text-sm font-medium transition-colors hover:text-accent dark:hover:text-accent ${pathname === '/' ? 'text-accent font-bold' : 'text-primary dark:text-background'}`}>Home</Link>
           {renderNavLinks()}
         </nav>
         <div className="flex items-center gap-4">
-          <Button asChild className="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary/10 text-primary dark:bg-secondary/10 dark:text-secondary text-sm font-bold hover:bg-primary/20 dark:hover:bg-secondary/20 transition-all duration-300">
+          <Button asChild className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary/10 text-primary dark:bg-background/10 dark:text-background text-sm font-bold hover:bg-primary/20 dark:hover:bg-background/20 transition-all duration-300">
             <Link href="/contact">Get a Quote</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -75,7 +74,6 @@ export default function Header() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-6">
-                    <Link href="/" onClick={handleLinkClick} className={`block py-2 text-lg transition-colors hover:text-accent dark:hover:text-accent ${pathname === '/' ? 'text-accent font-bold' : 'text-primary dark:text-background'}`}>Home</Link>
                     {renderNavLinks(true)}
                 </nav>
                  <Button asChild size="lg" className="mt-auto bg-accent text-white hover:bg-accent/90">

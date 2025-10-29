@@ -31,11 +31,12 @@ const Hero = () => {
               <div className="absolute inset-16 bg-primary/10 dark:bg-background/10 rounded-full blur-3xl animate-[spin_15s_linear_infinite]"></div>
               <Image 
                 className="relative w-full h-full object-cover rounded-xl shadow-2xl shadow-primary/10 dark:shadow-black/20" 
-                alt="Man working on a computer" 
-                src="https://picsum.photos/seed/dev-computer/600/600"
+                alt="Abstract representation of vision and form with geometric shapes and fluid lines." 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8NCnpE90PkEc9RV75rPpJ3mdCakhNjQu-yrpNtWE-fix4ob6B2yMJWsqhfPvrrnZwtwIR6Rcz0Sa97lqxnjQku8ahxKsUKhFJ2fntHqJ-_VnwJxA2oFawv1BBHcbUq7_GZ2oG4awjQyOnuVOlw5h6XNutAccaEtfHOPmUe7NBv7gry15avnZKWLsBBgptdfWHKFByZQk0dsSrCJwSFFvegXf2iXd2U5vyPx9mO2AAS6OypYEQ8o1NcE_3xBpQaPSavP4leGcmeI"
                 width={600}
                 height={600}
-                data-ai-hint="man computer"
+                data-ai-hint="abstract geometric fluid"
+                unoptimized
               />
             </div>
           </div>
