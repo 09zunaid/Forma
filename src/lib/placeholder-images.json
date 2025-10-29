@@ -91,6 +91,24 @@
       "title": "Product Manager, TechFlow",
       "avatarUrl": "https://picsum.photos/seed/emily/100/100",
       "avatarHint": "smiling woman"
+    },
+    {
+      "id": "testimonial-4",
+      "type": "written",
+      "quote": "The team's attention to detail is unmatched. They took our vision and turned it into a reality that exceeded our wildest dreams. The new website is both beautiful and functional.",
+      "name": "James White",
+      "title": "Marketing Director, QuantumLeap",
+      "avatarUrl": "https://picsum.photos/seed/james/100/100",
+      "avatarHint": "man in suit"
+    },
+    {
+      "id": "testimonial-5",
+      "type": "video",
+      "quote": "Forma's process is so collaborative. They kept us in the loop every step of the way and delivered a product that has significantly improved our user engagement.",
+      "name": "Maria Garcia",
+      "title": "Founder, Bloom & Stem",
+      "thumbnailUrl": "https://picsum.photos/seed/maria/600/400",
+      "thumbnailHint": "woman video call"
     }
   ],
   "about": {
