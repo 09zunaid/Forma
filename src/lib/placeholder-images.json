@@ -4,7 +4,7 @@
       "id": "lumino-portfolio",
       "title": "Lumino Portfolio",
       "category": "Portfolio",
-      "imageUrl": "https://picsum.photos/seed/lumino/600/400",
+      "imageUrl": "https://picsum.photos/seed/design/600/400",
       "imageHint": "modern portfolio",
       "link": "https://lumino-portfolio.vercel.app/"
     },
@@ -12,7 +12,7 @@
       "id": "apple-dental",
       "title": "Apple Dental Care",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/dental/600/400",
+      "imageUrl": "https://picsum.photos/seed/medical/600/400",
       "imageHint": "dental clinic",
       "link": "https://apple-dental-care-three.vercel.app/"
     },
@@ -20,7 +20,7 @@
       "id": "cafe-encanto",
       "title": "Cafe Encanto",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/cafe/600/400",
+      "imageUrl": "https://picsum.photos/seed/coffee/600/400",
       "imageHint": "cozy cafe",
       "link": "https://cafe-encanto-delta.vercel.app/"
     },
@@ -28,7 +28,7 @@
       "id": "starlight-bakery",
       "title": "StarLight Bakery",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/bakery/600/400",
+      "imageUrl": "https://picsum.photos/seed/bread/600/400",
       "imageHint": "artisan bakery",
       "link": "https://star-light-bakery.vercel.app/"
     },
@@ -36,7 +36,7 @@
       "id": "evergreen-grocer",
       "title": "EverGreen Grocer",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/grocery/600/400",
+      "imageUrl": "https://picsum.photos/seed/vegetables/600/400",
       "imageHint": "fresh groceries",
       "link": "https://ever-green-grocer.vercel.app/"
     },
@@ -44,7 +44,7 @@
       "id": "urban-step",
       "title": "Urban Step",
       "category": "E-commerce",
-      "imageUrl": "https://picsum.photos/seed/shoes/600/400",
+      "imageUrl": "https://picsum.photos/seed/fashion/600/400",
       "imageHint": "stylish sneakers",
       "link": "https://urban-step.vercel.app/"
     },
@@ -52,7 +52,7 @@
       "id": "enigmatic-elixirs",
       "title": "Enigmatic Elixirs",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/elixirs/600/400",
+      "imageUrl": "https://picsum.photos/seed/magic/600/400",
       "imageHint": "fantasy potions",
       "link": "https://enigmatic-elixirs.vercel.app/"
     }
