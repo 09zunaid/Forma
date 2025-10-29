@@ -3,12 +3,10 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight } from 'lucide-react';
 import portfolioData from '@/lib/placeholder-images.json';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { cn } from '@/lib/utils';
 
 type Project = {
   id: string;
@@ -17,10 +15,12 @@ type Project = {
   imageUrl: string;
   imageHint: string;
   link: string;
+  result: string;
+  span?: string;
 };
 
 const projects: Project[] = portfolioData.portfolio;
-const categories = ['All', 'Web App', 'E-commerce', 'Portfolio'];
+const categories = ['All', 'Branding', 'Web App', 'E-commerce'];
 
 export default function Portfolio() {
   const [filter, setFilter] = React.useState('All');
@@ -31,64 +31,86 @@ export default function Portfolio() {
   }, [filter]);
 
   return (
-    <section id="portfolio" className="bg-secondary/50">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="portfolio" className="bg-background">
+      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
         <div className="mb-12 text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Showcase</h2>
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Work</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A showcase of our passion for design and development, brought to life in our projects.
+            We create beautiful, functional, and impactful digital experiences that drive results for our clients.
           </p>
         </div>
 
-        <Tabs defaultValue="All" onValueChange={(value) => setFilter(value)} className="mb-8 flex justify-center">
-          <TabsList>
-            {categories.map((category) => (
-              <TabsTrigger key={category} value={category}>
-                {category}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-        </Tabs>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {filteredProjects.map((project) => (
-            <Card key={project.id} className="group overflow-hidden">
-              <CardContent className="p-0">
-                <div className="relative h-60 w-full overflow-hidden">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    data-ai-hint={project.imageHint}
-                  />
-                  <div className="absolute inset-0 bg-black/20"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <Badge variant="secondary" className="mb-2">{project.category}</Badge>
-                      <h3 className="font-headline text-xl font-semibold">{project.title}</h3>
-                    </div>
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-1 flex-shrink-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                      aria-label={`View ${project.title}`}
-                    >
-                      <Button variant="ghost" size="icon">
-                        <ArrowUpRight className="h-5 w-5" />
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+        <div className="mb-12 flex flex-wrap items-center justify-center gap-3 rounded-full bg-secondary p-2 dark:bg-primary/30">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={cn(
+                'h-10 shrink-0 cursor-pointer items-center justify-center rounded-full px-5 text-sm font-medium transition-colors',
+                filter === category
+                  ? 'bg-accent text-accent-foreground shadow-md font-bold'
+                  : 'text-muted-foreground hover:bg-white dark:text-muted-foreground dark:hover:bg-primary'
+              )}
+            >
+              {category}
+            </button>
           ))}
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className={cn(
+                'group relative col-span-1 overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl',
+                project.span === 'col-span-2' && 'md:col-span-2'
+              )}
+            >
+              <Image
+                src={project.imageUrl}
+                alt={project.title}
+                width={600}
+                height={400}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-ai-hint={project.imageHint}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 w-full p-6 text-white">
+                <h3 className="font-display text-xl font-bold">{project.title}</h3>
+                <p className="mt-1 text-accent">{project.result}</p>
+                <div className="group-hover-card absolute bottom-0 left-0 right-0 translate-y-full transform rounded-t-lg bg-white p-6 opacity-0 transition-all duration-500 ease-in-out dark:bg-primary">
+                  <Link
+                    href={project.link}
+                    className="flex items-center justify-between font-bold text-primary dark:text-white"
+                  >
+                    <span>View Case Study</span>
+                    <ArrowUpRight className="h-5 w-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-secondary/50 dark:bg-primary/30">
+        <div className="container mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+            <div className="text-center">
+                <h2 className="font-display text-3xl font-bold tracking-tighter text-primary dark:text-secondary sm:text-4xl">Ready to Shape Your Vision?</h2>
+                <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground dark:text-secondary/80">Let's build something amazing together. Tell us about your project and let's craft the form of your vision.</p>
+                <div className="mt-8 flex justify-center">
+                    <Button asChild size="lg" className="rounded-full h-12 px-8 bg-accent text-white shadow-lg transition-transform hover:scale-105">
+                        <Link href="/contact">Start Your Project</Link>
+                    </Button>
+                </div>
+            </div>
         </div>
       </div>
     </section>
   );
 }
+
+// Add this to your globals.css or a style tag
+// .group:hover .group-hover-card {
+//   transform: translateY(0);
+//   opacity: 1;
+// }
