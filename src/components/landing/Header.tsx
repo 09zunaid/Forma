@@ -11,7 +11,6 @@ import { usePathname } from 'next/navigation';
 const navLinks = [
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/process', label: 'Process' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -34,7 +33,7 @@ export default function Header() {
           onClick={handleLinkClick}
           className={`transition-colors hover:text-accent dark:hover:text-accent ${
             isMobile
-              ? 'block py-2 text-lg'
+              ? `block py-2 text-lg ${isActive ? 'text-accent font-bold' : 'text-primary dark:text-background'}`
               : `text-sm font-medium ${isActive ? 'text-accent font-bold' : 'text-primary dark:text-background'}`
           }`}
         >
@@ -76,7 +75,7 @@ export default function Header() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-6">
-                    <Link href="/" onClick={handleLinkClick} className={`block py-2 text-lg transition-colors hover:text-accent dark:hover:text-accent ${pathname === '/' ? 'text-accent font-bold' : ''}`}>Home</Link>
+                    <Link href="/" onClick={handleLinkClick} className={`block py-2 text-lg transition-colors hover:text-accent dark:hover:text-accent ${pathname === '/' ? 'text-accent font-bold' : 'text-primary dark:text-background'}`}>Home</Link>
                     {renderNavLinks(true)}
                 </nav>
                  <Button asChild size="lg" className="mt-auto bg-accent text-white hover:bg-accent/90">
