@@ -9,7 +9,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Send } from 'lucide-react';
-import { sendEmail } from '@/app/actions';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -30,18 +29,24 @@ export default function LeadForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-        await sendEmail(values);
-        toast({
-            title: 'Message Sent!',
-            description: "Thanks for reaching out. We'll get back to you shortly.",
-        });
-        form.reset();
+      const { name, email, message } = values;
+      const mailtoLink = `mailto:mohammadzunaid83@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
+      
+      if (typeof window !== 'undefined') {
+        window.location.href = mailtoLink;
+      }
+
+      toast({
+        title: 'Message Ready!',
+        description: "Your email client should now be open with your message.",
+      });
+      form.reset();
     } catch (error) {
-        toast({
-            variant: 'destructive',
-            title: 'Uh oh! Something went wrong.',
-            description: 'There was a problem with your request.',
-        });
+      toast({
+        variant: 'destructive',
+        title: 'Uh oh! Something went wrong.',
+        description: 'There was a problem preparing your email.',
+      });
     }
   }
 
@@ -88,7 +93,7 @@ export default function LeadForm() {
           )}
         />
         <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-            <Send className="mr-2 h-4 w-4" />
+          <Send className="mr-2 h-4 w-4" />
           {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
