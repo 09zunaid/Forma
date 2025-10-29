@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Analytics } from '@vercel/analytics/react';
+import PageTransition from '@/components/PageTransition';
 
 export const metadata: Metadata = {
   title: 'Forma: The Form Of Your Vision',
@@ -27,7 +28,9 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
         <Toaster />
         <Analytics />
       </body>
