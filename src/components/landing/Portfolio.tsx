@@ -20,7 +20,7 @@ type Project = {
 };
 
 const projects: Project[] = portfolioData.portfolio;
-const categories = ['All', 'Branding', 'Web App', 'E-commerce'];
+const categories = ['All', 'Portfolio', 'Web App', 'E-commerce'];
 
 export default function Portfolio() {
   const [filter, setFilter] = React.useState('All');
@@ -63,7 +63,7 @@ export default function Portfolio() {
               key={project.id}
               className={cn(
                 'group relative col-span-1 overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl',
-                project.span === 'col-span-2' && 'md:col-span-2'
+                project.span
               )}
             >
               <Image
