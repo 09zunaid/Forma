@@ -8,31 +8,31 @@ const services = [
     icon: <PenTool className="h-8 w-8 text-accent" />,
     title: 'Website Design & Development',
     description: 'Creating beautiful, custom websites that convert visitors into customers and build brand credibility.',
-    link: '#',
+    link: '/contact',
   },
   {
     icon: <ShoppingCart className="h-8 w-8 text-accent" />,
     title: 'E-commerce Solutions',
     description: 'Building powerful online stores to sell your products effectively with secure transactions and easy management.',
-    link: '#',
+    link: '/contact',
   },
   {
     icon: <Palette className="h-8 w-8 text-accent" />,
     title: 'UI/UX Design',
     description: 'Crafting intuitive and visually appealing user interfaces that enhance user experience and engagement.',
-    link: '#',
+    link: '/contact',
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-accent" />,
     title: 'SEO Setup',
     description: 'Helping your business get found on Google by ideal customers, driving more traffic and quality leads.',
-    link: '#',
+    link: '/contact',
   },
   {
     icon: <Wrench className="h-8 w-8 text-accent" />,
     title: 'Ongoing Maintenance & Support',
     description: 'Providing peace of mind with reliable website support, security, and updates, acting as your partner for growth.',
-    link: '#',
+    link: '/contact',
   },
 ];
 
