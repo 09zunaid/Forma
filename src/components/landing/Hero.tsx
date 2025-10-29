@@ -32,7 +32,7 @@ const Hero = () => {
               <Image 
                 className="relative w-full h-full object-cover rounded-xl shadow-2xl shadow-primary/10 dark:shadow-black/20" 
                 alt="Abstract representation of vision and form with geometric shapes and fluid lines." 
-                src="https://picsum.photos/seed/hero/600/600"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8NCnpE90PkEc9RV75rPpJ3mdCakhNjQu-yrpNtWE-fix4ob6B2yMJWsqhfPvrrnZwtwIR6Rcz0Sa97lqxnjQku8ahxKsUKhFJ2fntHqJ-_VnwJxA2oFawv1BBHcbUq7_GZ2oG4awjQyOnuVOlw5h6XNutAccaEtfHOPmUe7NBv7gry15avnZKWLsBBgptdfWHKFByZQk0dsSrCJwSFFvegXf2iXd2U5vyPx9mO2AAS6OypYEQ8o1NcE_3xBpQaPSavP4leGcmeI"
                 width={600}
                 height={600}
                 data-ai-hint="geometric shapes fluid lines"
