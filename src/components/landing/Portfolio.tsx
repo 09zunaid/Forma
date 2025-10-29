@@ -20,7 +20,7 @@ type Project = {
 };
 
 const projects: Project[] = portfolioData.portfolio;
-const categories = ['All', 'Web App', 'E-commerce', 'Portfolio', 'UI/UX Design'];
+const categories = ['All', 'Web App', 'E-commerce', 'Portfolio'];
 
 export default function Portfolio() {
   const [filter, setFilter] = React.useState('All');
@@ -34,9 +34,9 @@ export default function Portfolio() {
     <section id="portfolio" className="bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Work</h2>
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Showcase</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            We take pride in the solutions we've delivered. Explore some of our favorite projects.
+            A showcase of our passion for design and development, brought to life in our projects.
           </p>
         </div>
 
