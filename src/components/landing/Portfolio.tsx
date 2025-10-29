@@ -81,6 +81,8 @@ export default function Portfolio() {
                 <div className="group-hover-card absolute bottom-0 left-0 right-0 translate-y-full transform rounded-t-lg bg-white p-6 opacity-0 transition-all duration-500 ease-in-out dark:bg-primary">
                   <Link
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-between font-bold text-primary dark:text-white"
                   >
                     <span>View Case Study</span>
