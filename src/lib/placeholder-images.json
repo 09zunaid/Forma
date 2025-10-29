@@ -88,12 +88,12 @@
   ],
   "about": {
     "founder": {
-      "imageUrl": "https://picsum.photos/seed/zunaid/400/400",
-      "imageHint": "professional man"
+      "imageUrl": "https://picsum.photos/seed/founder-new/400/400",
+      "imageHint": "founder portrait"
     },
     "team": {
-      "imageUrl": "https://picsum.photos/seed/team-photo/600/400",
-      "imageHint": "team collaborating"
+      "imageUrl": "https://picsum.photos/seed/team-new/600/400",
+      "imageHint": "office meeting"
     }
   }
 }
