@@ -10,51 +10,58 @@
       "result": "Increased Brand Recognition by 75%"
     },
     {
-      "id": "stripe-saas",
-      "title": "Stripe - SaaS Platform Redesign",
+      "id": "apple-dental-care",
+      "title": "Apple Dental Care",
       "category": "Web App",
-      "result": "Boosted User Engagement by 50%",
-      "imageUrl": "https://picsum.photos/seed/stripe-saas/1200/800",
-      "imageHint": "clean dashboard ui",
-      "link": "#",
-      "span": "md:col-span-2"
+      "result": "Streamlined patient booking process",
+      "imageUrl": "https://picsum.photos/seed/apple-dental/600/400",
+      "imageHint": "dental clinic website",
+      "link": "https://apple-dental-care-three.vercel.app/"
     },
     {
-      "id": "noma-ecommerce",
-      "title": "Noma - E-commerce Experience",
+      "id": "cafe-encanto",
+      "title": "Cafe Encanto",
       "category": "E-commerce",
-      "result": "Increased Online Bookings by 40%",
-      "imageUrl": "https://picsum.photos/seed/noma-ecommerce/1200/800",
-      "imageHint": "stylish sneakers e-commerce",
-      "link": "#",
-      "span": "md:col-span-2"
+      "result": "Boosted online orders by 50%",
+      "imageUrl": "https://picsum.photos/seed/cafe-encanto/600/400",
+      "imageHint": "coffee shop website",
+      "link": "https://cafe-encanto-delta.vercel.app/"
     },
     {
-      "id": "luxestay-hospitality",
-      "title": "LuxeStay - Hospitality Booking",
+      "id": "star-light-bakery",
+      "title": "Star Light Bakery",
+      "category": "E-commerce",
+      "result": "Expanded customer reach",
+      "imageUrl": "https://picsum.photos/seed/starlight-bakery/600/400",
+      "imageHint": "bakery products",
+      "link": "https://star-light-bakery.vercel.app/"
+    },
+    {
+      "id": "ever-green-grocer",
+      "title": "Ever-Green Grocer",
+      "category": "E-commerce",
+      "result": "2x increase in online sales",
+      "imageUrl": "https://picsum.photos/seed/evergreen-grocer/600/400",
+      "imageHint": "fresh grocery produce",
+      "link": "https://ever-green-grocer.vercel.app/"
+    },
+    {
+      "id": "urban-step",
+      "title": "Urban Step",
+      "category": "E-commerce",
+      "result": "Modernized online shoe store",
+      "imageUrl": "https://picsum.photos/seed/urban-step/600/400",
+      "imageHint": "stylish sneakers",
+      "link": "https://urban-step.vercel.app/"
+    },
+    {
+      "id": "enigmatic-elixirs",
+      "title": "Enigmatic Elixirs",
       "category": "Web App",
-      "result": "Lifted Direct Reservations by 30%",
-      "imageUrl": "https://picsum.photos/seed/luxestay-hospitality/600/400",
-      "imageHint": "modern hotel lobby",
-      "link": "#"
-    },
-    {
-      "id": "canva-branding",
-      "title": "Canva - Brand Identity Refresh",
-      "category": "Portfolio",
-      "result": "2x Social Media Engagement",
-      "imageUrl": "https://picsum.photos/seed/canva-branding/600/400",
-      "imageHint": "colorful branding materials",
-      "link": "#"
-    },
-    {
-      "id": "linear-app",
-      "title": "Linear - Web App Development",
-      "category": "Web App",
-      "result": "Cut Page Load Time by 60%",
-      "imageUrl": "https://picsum.photos/seed/linear-app/600/400",
-      "imageHint": "responsive website design",
-      "link": "#"
+      "result": "Engaging product discovery experience",
+      "imageUrl": "https://picsum.photos/seed/enigmatic-elixirs/600/400",
+      "imageHint": "fantasy potion bottles",
+      "link": "https://enigmatic-elixirs.vercel.app/"
     }
   ],
   "testimonials": [
@@ -88,11 +95,11 @@
   ],
   "about": {
     "founder": {
-      "imageUrl": "https://picsum.photos/seed/founder-new-2/400/400",
+      "imageUrl": "https://picsum.photos/seed/founder-new-4/400/400",
       "imageHint": "founder portrait"
     },
     "team": {
-      "imageUrl": "https://picsum.photos/seed/team-new-2/600/400",
+      "imageUrl": "https://picsum.photos/seed/team-new-4/600/400",
       "imageHint": "office meeting"
     }
   }
