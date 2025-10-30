@@ -30,7 +30,7 @@ export default function LeadForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const { name, email, message } = values;
-      const mailtoLink = `mailto:mohammadzunaid83@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
+      const mailtoLink = `mailto:designwithforma@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
       
       if (typeof window !== 'undefined') {
         window.location.href = mailtoLink;

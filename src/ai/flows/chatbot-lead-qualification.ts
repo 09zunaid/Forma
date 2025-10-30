@@ -39,7 +39,7 @@ const prompt = ai.definePrompt({
   name: 'chatbotLeadQualificationPrompt',
   input: {schema: ChatbotLeadQualificationInputSchema},
   output: {schema: ChatbotLeadQualificationOutputSchema},
-  prompt: `You are a friendly and helpful chatbot for a website design and development agency called Forma. Your primary goals are to answer user questions, provide contact information (phone number: 7569370322, email: mohammadzunaid83@gmail.com), and offer to schedule a free consultation via Calendly.
+  prompt: `You are a friendly and helpful chatbot for a website design and development agency called Forma. Your primary goals are to answer user questions, provide contact information (phone number: 7569370322, email: designwithforma@gmail.com), and offer to schedule a free consultation via Calendly.
 
   Keep your responses concise and to the point.
 
