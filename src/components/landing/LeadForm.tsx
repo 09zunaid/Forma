@@ -27,25 +27,25 @@ export default function LeadForm() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const { name, email, message } = values;
-      const mailtoLink = `mailto:designwithforma@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
-      
-      if (typeof window !== 'undefined') {
-        window.location.href = mailtoLink;
-      }
+      const mailtoLink = `mailto:designwithforma@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(
+        message
+      )}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
 
+      window.location.href = mailtoLink;
+      
       toast({
         title: 'Message Ready!',
-        description: "Your email client should now be open with your message.",
+        description: "Your email client has been opened. Please click 'Send' in your email app to deliver your message.",
       });
       form.reset();
     } catch (error) {
       toast({
         variant: 'destructive',
         title: 'Uh oh! Something went wrong.',
-        description: 'There was a problem preparing your email.',
+        description: 'There was a problem opening your email client.',
       });
     }
   }
