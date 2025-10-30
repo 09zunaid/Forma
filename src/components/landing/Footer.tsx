@@ -17,7 +17,7 @@ const navLinks = [
 const socialLinks = [
     {
         name: 'LinkedIn',
-        href: '#',
+        href: 'https://www.linkedin.com/in/design-with-forma-a80ab4390?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bl1TLFcR%2FT96mQtd%2FLTRvvw%3D%3D',
         icon: (
             <svg aria-hidden="true" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M19.5 0h-15A4.5 4.5 0 000 4.5v15A4.5 4.5 0 004.5 24h15a4.5 4.5 0 004.5-4.5v-15A4.5 4.5 0 0019.5 0zm-11.25 19.5H4.5v-9h3.75v9zM6.375 8.25a1.875 1.875 0 110-3.75 1.875 1.875 0 010 3.75zM20.25 19.5h-3.75v-4.125c0-.996-.019-2.277-1.387-2.277-1.388 0-1.601 1.086-1.601 2.205v4.197h-3.75v-9h3.6v1.65h.05a3.935 3.935 0 013.55-1.83c3.794 0 4.494 2.498 4.494 5.742v6.588z" fillRule="evenodd"></path></svg>
         )
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
         <div className="flex justify-center gap-6">
             {socialLinks.map((link) => (
-                <a key={link.name} href={link.href} className="text-muted-foreground dark:text-secondary/70 hover:text-accent dark:hover:text-accent transition-colors">
+                <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground dark:text-secondary/70 hover:text-accent dark:hover:text-accent transition-colors">
                     <span className="sr-only">{link.name}</span>
                     {link.icon}
                 </a>
