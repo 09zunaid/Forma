@@ -62,6 +62,33 @@
       "imageUrl": "https://picsum.photos/seed/enigmatic-elixirs/600/400",
       "imageHint": "fantasy potion bottles",
       "link": "https://enigmatic-elixirs.vercel.app/"
+    },
+    {
+      "id": "luxe-adorn",
+      "title": "Luxe Adorn",
+      "category": "E-commerce",
+      "result": "Elegant e-commerce experience",
+      "imageUrl": "https://picsum.photos/seed/luxe-adorn/600/400",
+      "imageHint": "luxury jewelry website",
+      "link": "https://luxe-adorn.vercel.app/"
+    },
+    {
+      "id": "circuit-city",
+      "title": "Circuit City",
+      "category": "E-commerce",
+      "result": "Revitalized online electronics hub",
+      "imageUrl": "https://picsum.photos/seed/circuit-city/600/400",
+      "imageHint": "electronics store homepage",
+      "link": "https://circuit-city-mocha.vercel.app/"
+    },
+    {
+      "id": "paw-co",
+      "title": "Paw & Co",
+      "category": "E-commerce",
+      "result": "Pawsitively great shopping",
+      "imageUrl": "https://picsum.photos/seed/paw-co/600/400",
+      "imageHint": "pet supplies website",
+      "link": "https://paw-co.vercel.app/"
     }
   ],
   "testimonials": [
