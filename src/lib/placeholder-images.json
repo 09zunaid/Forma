@@ -89,6 +89,15 @@
       "imageUrl": "https://picsum.photos/seed/paw-co/600/400",
       "imageHint": "pet supplies website",
       "link": "https://paw-co.vercel.app/"
+    },
+    {
+      "id": "apex-legacy-motors",
+      "title": "Apex Legacy Motors",
+      "category": "Web App",
+      "result": "High-octane online presence",
+      "imageUrl": "https://picsum.photos/seed/apex-motors/600/400",
+      "imageHint": "classic car dealership",
+      "link": "https://apex-legacy-motors.vercel.app/"
     }
   ],
   "testimonials": [
