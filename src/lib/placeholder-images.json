@@ -98,6 +98,15 @@
       "imageUrl": "https://aicdn.picsart.com/ce5ef5fb-40ca-4418-9d90-649bc36d468c.png",
       "imageHint": "classic car dealership",
       "link": "https://apex-legacy-motors.vercel.app/"
+    },
+    {
+      "id": "ever-after-planners",
+      "title": "Ever After Planners",
+      "category": "Web App",
+      "result": "Dream wedding planning starts here",
+      "imageUrl": "https://picsum.photos/seed/wedding-planning/600/400",
+      "imageHint": "wedding planning elegant",
+      "link": "https://ever-after-planners.vercel.app/"
     }
   ],
   "testimonials": [
