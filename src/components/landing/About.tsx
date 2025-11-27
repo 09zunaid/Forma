@@ -16,13 +16,6 @@ const team = {
   imageHint: placeholderImages.about.team.imageHint,
 }
 
-const stats = [
-  { value: '5+', label: 'Years of Experience' },
-  { value: '50+', label: 'Projects Completed' },
-  { value: '99%', label: 'Client Satisfaction' },
-  { value: '100%', label: 'Passion for Code' },
-];
-
 const values = [
     {
       icon: <Goal className="h-8 w-8 text-accent" />,
@@ -76,20 +69,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-secondary/50">
-        <div className="container mx-auto px-4 py-16 md:py-24">
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-                {stats.map((stat) => (
-                    <div key={stat.label} className="text-center">
-                        <p className="text-4xl font-bold text-accent sm:text-5xl">{stat.value}</p>
-                        <p className="mt-2 text-sm font-medium text-muted-foreground">{stat.label}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-      </section>
-
-      <section id="values" className="bg-background">
+      <section id="values" className="bg-secondary/50">
         <div className="container mx-auto px-4 py-16 md:py-24">
             <div className="mb-12 text-center">
                 <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Core Values</h2>
@@ -111,7 +91,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-secondary/50">
+      <section className="bg-background">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
              <div className="relative h-96 w-full max-w-sm mx-auto lg:max-w-none">
