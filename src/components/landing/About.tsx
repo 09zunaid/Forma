@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Award, Goal, Users } from 'lucide-react';
+import { Award, Goal, Users, BrainCircuit } from 'lucide-react';
 import placeholderImages from '@/lib/placeholder-images.json';
 
 const founder = {
@@ -39,6 +39,11 @@ const values = [
       title: 'Our Team',
       description: 'We are a small, dedicated team of designers and developers who are passionate about what we do. We combine our diverse skills to deliver comprehensive and innovative solutions.',
     },
+    {
+      icon: <BrainCircuit className="h-8 w-8 text-accent" />,
+      title: 'AI-Powered Innovation',
+      description: 'We harness the power of artificial intelligence to accelerate development, create intelligent features, and deliver cutting-edge web solutions that give you a competitive edge.',
+    }
   ];
 
 export default function About() {
@@ -52,7 +57,7 @@ export default function About() {
                 The Story Behind Forma
               </h1>
               <p className="text-lg text-muted-foreground">
-                Forma was born from a simple idea: that powerful, elegant web design should be accessible to everyone. Founded by Mohammad Zunaid, a developer with a passion for clean code and user-centric design, our agency is built on a foundation of creativity, collaboration, and a relentless pursuit of excellence. We're not just building websites; we're crafting digital experiences that give form to your vision.
+                Forma was born from a simple idea: that powerful, elegant web design should be accessible to everyone. Founded by Mohammad Zunaid, a developer with a passion for clean code and user-centric design, our agency is built on a foundation of creativity, collaboration, and a relentless pursuit of excellence. We leverage cutting-edge AI to craft digital experiences that give form to your vision.
               </p>
               <Button asChild size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Link href="/contact">Let's Work Together</Link>
@@ -92,9 +97,9 @@ export default function About() {
                     The principles that guide everything we do.
                 </p>
             </div>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {values.map((value) => (
-                    <div key={value.title} className="text-center p-8 border rounded-lg bg-card shadow-sm">
+                    <div key={value.title} className="text-center p-8 border rounded-lg bg-card shadow-sm flex flex-col items-center">
                         <div className="inline-block rounded-full bg-accent/10 p-4 mb-4">
                             {value.icon}
                         </div>
