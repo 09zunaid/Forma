@@ -5,8 +5,8 @@ import LeadForm from './LeadForm';
 
 const contactDetails = {
   email: 'designwithforma@gmail.com',
-  phone: '7569370322',
-  whatsapp: 'https://wa.me/7569370322',
+  phone: '6300220974',
+  whatsapp: 'https://wa.me/6300220974',
 };
 
 export default function Contact() {
