@@ -76,7 +76,7 @@ export default function LeadForm() {
                 <Input placeholder="you@example.com" {...field} />
               </FormControl>
               <FormMessage />
-            </FormLabel>
+            </FormItem>
           )}
         />
         <FormField
