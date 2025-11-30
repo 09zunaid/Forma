@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import LeadForm from './LeadForm';
 
 const contactDetails = {
-  email: 'designwithforma@gmail.com',
+  email: 'info@designwithforma.in',
   phone: '+91 6300220974',
   whatsapp: 'https://wa.me/916300220974',
 };

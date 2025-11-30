@@ -30,7 +30,7 @@ export default function LeadForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const { name, email, message } = values;
-      const mailtoLink = `mailto:designwithforma@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(
+      const mailtoLink = `mailto:info@designwithforma.in?subject=New Message from ${name}&body=${encodeURIComponent(
         message
       )}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
 
@@ -76,7 +76,7 @@ export default function LeadForm() {
                 <Input placeholder="you@example.com" {...field} />
               </FormControl>
               <FormMessage />
-            </FormItem>
+            </FormLabel>
           )}
         />
         <FormField
