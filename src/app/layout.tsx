@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="https://aicdn.picsart.com/025ad86e-bcf1-4aea-803a-146c5166ea22.png" />
+        <link rel="icon" href="https://aicdn.picsart.com/00a09247-b267-4745-af15-53a8dde7e433.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
