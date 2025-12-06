@@ -112,7 +112,7 @@
       "id": "un-do-card",
       "title": "Un-Do Card",
       "category": "Web App",
-      "imageUrl": "https://picsum.photos/seed/undo-card/600/400",
+      "imageUrl": "https://aicdn.picsart.com/bbbe07c8-3ff1-4ca7-86d0-237944f9cc5f.png",
       "imageHint": "digital business card",
       "link": "https://un-do-card.vercel.app/",
       "result": "Innovative Digital Business Card"
@@ -167,7 +167,7 @@
   ],
   "about": {
     "founder": {
-      "imageUrl": "https://picsum.photos/seed/founder-portrait/400/400",
+      "imageUrl": "https://picsum.photos/seed/new-founder-img/400/400",
       "imageHint": "professional founder portrait"
     },
     "team": {
