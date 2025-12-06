@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Logo from '@/components/Logo';
 
@@ -38,7 +41,11 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="flex flex-col gap-8 px-5 py-10 text-center border-t border-accent-2/80 dark:border-white/10">
@@ -57,7 +64,9 @@ export default function Footer() {
                 </a>
             ))}
         </div>
-        <p className="text-muted-foreground dark:text-secondary/70 text-sm font-normal leading-normal">© {currentYear} Forma. All Rights Reserved.</p>
+        <p className="text-muted-foreground dark:text-secondary/70 text-sm font-normal leading-normal">
+            {currentYear ? `© ${currentYear} Forma. All Rights Reserved.` : '\u00A0'}
+        </p>
     </footer>
   );
 }
