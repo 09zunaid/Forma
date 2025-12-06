@@ -65,7 +65,7 @@ export default function Footer() {
             ))}
         </div>
         <p className="text-muted-foreground dark:text-secondary/70 text-sm font-normal leading-normal h-5">
-            {currentYear && `© ${currentYear} Forma. All Rights Reserved.`}
+            {currentYear ? `© ${currentYear} Forma. All Rights Reserved.` : ''}
         </p>
     </footer>
   );

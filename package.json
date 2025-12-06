@@ -1,6 +1,6 @@
 {
   "name": "nextn",
-  "version": "15.1.0",
+  "version": "16.0.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
