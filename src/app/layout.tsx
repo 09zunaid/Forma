@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4483924604635667"
+          crossOrigin="anonymous"></script>
         <link rel="icon" href="https://aicdn.picsart.com/77c11d4c-586e-42eb-a70c-c8943b4e021a.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
