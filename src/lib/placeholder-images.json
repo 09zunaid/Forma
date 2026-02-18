@@ -4,8 +4,8 @@
       "id": "lumino-portfolio",
       "title": "Lumino Portfolio",
       "category": "Portfolio",
-      "imageUrl": "https://picsum.photos/seed/woman-camera/600/400",
-      "imageHint": "woman holding camera",
+      "imageUrl": "https://aicdn.picsart.com/fb354e3b-631c-441d-8411-33b0dc8d645e.png",
+      "imageHint": "portfolio screenshot",
       "link": "https://lumino-portfolio.vercel.app/",
       "result": "Increased Brand Recognition by 75%"
     },
@@ -14,7 +14,7 @@
       "title": "Apple Dental Care",
       "category": "Web App",
       "result": "Streamlined patient booking process",
-      "imageUrl": "https://picsum.photos/seed/apple-dental/600/400",
+      "imageUrl": "https://aicdn.picsart.com/41a5bb6b-c2dd-4db7-b31a-ff7cfa7e8ff6.png",
       "imageHint": "dental clinic website",
       "link": "https://apple-dental-care-three.vercel.app/"
     },
@@ -23,7 +23,7 @@
       "title": "Cafe Encanto",
       "category": "E-commerce",
       "result": "Boosted online orders by 50%",
-      "imageUrl": "https://picsum.photos/seed/cafe-encanto/600/400",
+      "imageUrl": "https://aicdn.picsart.com/52278ffa-35be-46e1-8d77-5d39c3a0418a.png",
       "imageHint": "coffee shop website",
       "link": "https://cafe-encanto-delta.vercel.app/"
     },
@@ -32,7 +32,7 @@
       "title": "Star Light Bakery",
       "category": "E-commerce",
       "result": "Expanded customer reach",
-      "imageUrl": "https://picsum.photos/seed/starlight-bakery/600/400",
+      "imageUrl": "https://aicdn.picsart.com/49269a65-b822-4458-ba39-d61c765e9a69.png",
       "imageHint": "bakery products",
       "link": "https://star-light-bakery.vercel.app/"
     },
@@ -41,7 +41,7 @@
       "title": "Ever-Green Grocer",
       "category": "E-commerce",
       "result": "2x increase in online sales",
-      "imageUrl": "https://picsum.photos/seed/evergreen-grocer/600/400",
+      "imageUrl": "https://aicdn.picsart.com/2cb55639-7da9-4afb-8503-8f866e6d792e.png",
       "imageHint": "fresh grocery produce",
       "link": "https://ever-green-grocer.vercel.app/"
     },
@@ -50,7 +50,7 @@
       "title": "Urban Step",
       "category": "E-commerce",
       "result": "Modernized online shoe store",
-      "imageUrl": "https://picsum.photos/seed/urban-step/600/400",
+      "imageUrl": "https://aicdn.picsart.com/ca3cb2d4-1efa-42d6-828c-d6145d4edc07.png",
       "imageHint": "stylish sneakers",
       "link": "https://urban-step.vercel.app/"
     },
@@ -59,7 +59,7 @@
       "title": "Enigmatic Elixirs",
       "category": "Web App",
       "result": "Engaging product discovery experience",
-      "imageUrl": "https://picsum.photos/seed/enigmatic-elixirs/600/400",
+      "imageUrl": "https://aicdn.picsart.com/46f20015-fa40-498f-a95c-754c8687b84a.png",
       "imageHint": "fantasy potion bottles",
       "link": "https://enigmatic-elixirs.vercel.app/"
     },
@@ -68,7 +68,7 @@
       "title": "Luxe Adorn",
       "category": "E-commerce",
       "result": "Elegant e-commerce experience",
-      "imageUrl": "https://picsum.photos/seed/luxe-adorn/600/400",
+      "imageUrl": "https://aicdn.picsart.com/81d85b90-c8b3-4366-a5ff-491ee5611834.png",
       "imageHint": "luxury jewelry website",
       "link": "https://luxe-adorn.vercel.app/"
     },
@@ -77,7 +77,7 @@
       "title": "Circuit City",
       "category": "E-commerce",
       "result": "Revitalized online electronics hub",
-      "imageUrl": "https://picsum.photos/seed/circuit-city/600/400",
+      "imageUrl": "https://aicdn.picsart.com/a9bcedd1-357c-4a49-9936-5fc5cae92f26.png",
       "imageHint": "electronics store homepage",
       "link": "https://circuit-city-mocha.vercel.app/"
     },
@@ -86,7 +86,7 @@
       "title": "Paw & Co",
       "category": "E-commerce",
       "result": "Pawsitively great shopping",
-      "imageUrl": "https://picsum.photos/seed/paw-co/600/400",
+      "imageUrl": "https://aicdn.picsart.com/87de09af-60ca-43be-aa5d-fae4a9cc7aa8.png",
       "imageHint": "pet supplies website",
       "link": "https://paw-co.vercel.app/"
     },
@@ -95,9 +95,27 @@
       "title": "Apex Legacy Motors",
       "category": "Web App",
       "result": "High-octane online presence",
-      "imageUrl": "https://picsum.photos/seed/apex-motors/600/400",
+      "imageUrl": "https://aicdn.picsart.com/ce5ef5fb-40ca-4418-9d90-649bc36d468c.png",
       "imageHint": "classic car dealership",
       "link": "https://apex-legacy-motors.vercel.app/"
+    },
+    {
+      "id": "ever-after-planners",
+      "title": "Ever After Planners",
+      "category": "Web App",
+      "result": "Dream wedding planning starts here",
+      "imageUrl": "https://aicdn.picsart.com/20009ab2-0f03-4b7b-8ba2-eccf064b30b4.png",
+      "imageHint": "wedding planning elegant",
+      "link": "https://ever-after-planners.vercel.app/"
+    },
+    {
+      "id": "un-do-card",
+      "title": "Un-Do Card",
+      "category": "Web App",
+      "result": "Engaging Card Game",
+      "imageUrl": "https://aicdn.picsart.com/bbbe07c8-3ff1-4ca7-86d0-237944f9cc5f.png",
+      "imageHint": "card game",
+      "link": "https://un-do-card.vercel.app/"
     }
   ],
   "testimonials": [

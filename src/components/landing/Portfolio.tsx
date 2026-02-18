@@ -65,7 +65,7 @@ export default function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
-                'group relative col-span-1 overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl',
+                'group relative col-span-1 overflow-hidden rounded-3xl shadow-lg transition-shadow duration-300 hover:shadow-2xl',
                 project.span
               )}
             >
